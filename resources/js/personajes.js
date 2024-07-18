@@ -21,7 +21,7 @@ let personajeQiyana = new Personajes(
         },
     }, {
         nombre: "Audacity",
-        descripcion: "Qiyana muestra su poder total causando entre 50 o 100 de daño",
+        descripcion: "Qiyana muestra su poder elementalista causando entre 50 o 100 de daño",
         usar: function (valorPoder) {
             let valorSuerte = Math.random();
             let valorAtaque = valorSuerte >= 0.5 ? valorPoder * 2 : valorPoder;
@@ -45,7 +45,7 @@ let personajeAkali = new Personajes(
         },
     }, {
         nombre: "Perfect Execution",
-        descripcion: " Akali se pepara y desplaza hacia el enemigo 4 veces, causandole entre 20, 40, 60, u 80 de daño",
+        descripcion: " Akali salta sobre el enemigo 4 veces, causandole entre 20, 40, 60, u 80 de daño",
         usar: function (valorPoder) {
             let valorMultiplicador = Math.floor(Math.random() * (6 - 1));
             let valorAtaque = valorPoder * valorMultiplicador;
@@ -67,7 +67,7 @@ let personajeViego = new Personajes(
         },
     }, {
         nombre: "Heartbreaker",
-        descripcion: "Viego vuela y cae violentamente explotando todo a su alrededor, haciendo 80 de daño",
+        descripcion: "Viego cae violentamente haciendo haciendo 80 de daño",
         usar: function (valorPoder) {
             let valorAtaque = valorPoder * 2;
             return valorAtaque;
@@ -103,13 +103,13 @@ let personajeFizz= new Personajes(
     120,
     50, {
         nombre: "Playful",
-        descripcion: "Fizz salta en su tridente y cae violentamente causando 50 de daño",
+        descripcion: "Fizz salta en su tridente cae causando 50 de daño",
         usar: function (valorPoder) {
             return valorPoder;
         },
     }, {
         nombre: "SHAAAAARK!",
-        descripcion: "Fizz llama a su amigo tiburon el cual salta mordiendo a todos, e inflige 100 de daño",
+        descripcion: "Fizz llama a Sharky, muerde a todos e inflige 100 de daño",
         usar: function (valorPoder) {
             let valorAtaque = valorPoder * 2;
             return valorAtaque;
@@ -123,14 +123,14 @@ let personajeEkko= new Personajes(
     "Ekko",
     100,
     40, {
-        nombre: "Resonating Strike",
-        descripcion: "Ekko tira su giratiempo y hace 40 de daño a los enemigos por los cuales pasa",
+        nombre: "Dissonating Strike",
+        descripcion: "Ekko arroja su giratiempo y hace 40 de daño",
         usar: function (valorPoder) {
             return valorPoder;
         },
     }, {
         nombre: "Chronobreak",
-        descripcion: "Ekko vuelve en el tiempo y explota en su posicion causando MUCHISIMO daño",
+        descripcion: "Ekko vuelve en el tiempo y explota en su posicion causando 95 de daño",
         usar: function (valorPoder) {
             let valorAtaque = valorPoder + 55;
             return valorAtaque;
