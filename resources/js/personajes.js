@@ -67,7 +67,7 @@ let personajeViego = new Personajes(
         },
     }, {
         nombre: "Heartbreaker",
-        descripcion: "Viego vuela y cae violentamente explotando todo a su alrededor",
+        descripcion: "Viego vuela y cae violentamente explotando todo a su alrededor, haciendo 80 de daño",
         usar: function (valorPoder) {
             let valorAtaque = valorPoder * 2;
             return valorAtaque;
@@ -97,6 +97,7 @@ let personajeCaitlyn= new Personajes(
     "resources/img/personajes/iconcaitlyn.png",
     "resources/img/personajes/iconcaitlyn.png"
 );
+
 let personajeFizz= new Personajes(
     "Fizz",
     120,
@@ -117,6 +118,7 @@ let personajeFizz= new Personajes(
     "resources/img/personajes/iconfizz.png",
     "resources/img/personajes/iconfizz.png"
 );
+
 let personajeEkko= new Personajes(
     "Ekko",
     100,
@@ -130,8 +132,7 @@ let personajeEkko= new Personajes(
         nombre: "Chronobreak",
         descripcion: "Ekko vuelve en el tiempo y explota en su posicion causando MUCHISIMO daño",
         usar: function (valorPoder) {
-            let valorMultiplicador = Math.floor(Math.random() * (5 - 1));
-            let valorAtaque = valorPoder + valorMultiplicador;
+            let valorAtaque = valorPoder + 55;
             return valorAtaque;
         },
     },
