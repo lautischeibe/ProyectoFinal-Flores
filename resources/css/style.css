@@ -95,6 +95,7 @@ html {
 .vida {
     margin: 2%;
     margin-top: 1%;
+    margin-bottom: 5%;
     font-size: 200%;
     font-weight: 900;
     text-shadow: 2px 2px 30px black;
@@ -187,7 +188,7 @@ html {
 #ventanaFinal {
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
-    margin-top: -29%;
+    margin-top: -25%;
     text-align: center;
     font-size: 200%;
     visibility: hidden;
@@ -255,12 +256,12 @@ html {
     font-weight: 900;
     font-size: 300%;
     color: white;
-    margin-top: -15px;
+    margin-top: 0px;
 }
 
 #jugadores span {
     font-weight: bold;
-    font-size: 50%;
+    font-size: 60%;
 }
 
 .ocultarFondo {
