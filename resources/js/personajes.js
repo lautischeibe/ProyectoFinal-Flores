@@ -109,7 +109,7 @@ let personajeFizz= new Personajes(
         },
     }, {
         nombre: "SHAAAAARK!",
-        descripcion: "Fizz llama a Sharky, muerde a todos e inflige 100 de daño",
+        descripcion: "Fizz llama a Sharky, este salta mordiendo a todos, e inflige 100 de daño",
         usar: function (valorPoder) {
             let valorAtaque = valorPoder * 2;
             return valorAtaque;
