@@ -3,11 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"/>
     <link rel="stylesheet" href="resources/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="fondo ocultarFondo">
+        <div id="indicadorMensajes">Acá van los turnos</div>
+
+        <div class="level is-mobile">
+            <div class="level-item has-text-centered center-elements" id="player1">
+                <p>Player 1: <span id="nombrePlayer1">Algo</span></p>
+                <p class="vida">❤ <span id="vidaPlayer1">0</span></p>
+
+                <div class="personaje">
+                    <img src="https://bulma.io/images/placeholders/128x128.png" />
+                </div>
+
+                <div class="botones">
+                    <div class="button is-normal is-fullwidth">
+                        <span> ATAQUE </span>
+                    </div>
+                    <p class="descripcionAtaque">Acá va la descripción</p>
+                </div>
+
+                <div class="botones">
+                    <div class="button is-normal is-fullwidth">
+                        <span> ATAQUE </span>
+                    </div>
+                    <p class="descripcionAtaque">Acá va la descripción</p>
+                </div>
+            </div>
+
+            <div class="level-item has-text-centered center-elements" id="player2">
+                <p>Player 2: <span id="nombrePlayer2">Algo</span></p>
+                <p class="vida">❤ <span id="vidaPlayer2">0</span></p>
+
+                <div class="personaje">
+                    <img src="https://bulma.io/images/placeholders/128x128.png" />
+                </div>
+
+                <div class="botones">
+                    <div class="button is-normal is-fullwidth">
+                        <span> ATAQUE </span>
+                    </div>
+                    <p class="descripcionAtaque">Acá va la descripción</p>
+                </div>
+
+                <div class="botones">
+                    <div class="button is-normal is-fullwidth">
+                        <span> ATAQUE </span>
+                    </div>
+                    <p class="descripcionAtaque">Acá va la descripción</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="ventanaFinal">
+            <p>¿Volver a jugar?</p>
+            <a id="botonReiniciar" class="button is-normal is-success">
+                Reiniciar
+            </a>
+        </div>
+    </div>
+
+    <div class="fondo">
+        <div id="indicadorMensajesMenu">JUGADOR 1: Elige un personaje.</div>
+
+        <div class="columns is-mobile is-centered">
+            <div class="column">
+                <img src="img/personajes/iconqiyana.png" />
+                <p class="titulo">Qiyana</p>
+                <p class="subtitle is-6">❤ <span class="vidaPersonaje">150</span></p>
+                <h1 class="tituloAtaque">Ataque 1</h1>
+                <p class="describeAtaque">Descripción</p>
+                <h1 class="tituloAtaque">Ataque 2</h1>
+                <p class="describeAtaque">Descripción</p>
+            </div>
+        </div>
+
+        <div id="jugadores"><span>_________</span> VS <span>_________</span></div>
+    </div>
 
 
 
@@ -15,8 +91,7 @@
 
 
 
-
-<script src="resources/js/main.js"></script>
+<script src="resources/js/personajes.js"></script>
 
 </body>
 </html>
