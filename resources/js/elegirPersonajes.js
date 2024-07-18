@@ -32,7 +32,7 @@ function cargarPersonajes(){
         let nuevaCartaPersonaje = cartaPersonaje.cloneNode(true)
         nuevaCartaPersonaje.style.display = "inline"
         nuevaCartaPersonaje.className += " activo";
-        menuPersonajes.append(nuevaCartaPersonaje)
+        menuPersonajes.appendChild(nuevaCartaPersonaje)
     })
 
 }

@@ -1,10 +1,10 @@
 function actualizarIndicador(texto){
-    indicador.classList.toggle('alter')
+    indicador.classList.toggle("alter")
     indicador.innerText = texto
 }
 
 // Con esta funcion desactivo los botones cuando esta atacando el jugador
-function desactivarBotones(){
+function desactivarBotones(atacante){
     if(atacante === player1){
         BotonesPlayer1.forEach((element) => {
             element.classList.toggle("desactivado")
@@ -17,7 +17,7 @@ function desactivarBotones(){
 }
 
 // Selecciono el elemento del DOM que representa al personaje que es atacado
-function determinarDOMdePersonajeAtacado(){
+function determinarDOMdePersonajeAtacado(atacado){
     if(atacado === player2){
         return document.querySelectorAll(`#player2 .personaje img`)[0]
     } else if (atacado === player1){
@@ -26,9 +26,9 @@ function determinarDOMdePersonajeAtacado(){
 }
 
 // Ahora selecciono el elemento del DOM que representa el personaje atacante
-function determinarDOMdeAtacante(){
+function determinarDOMdeAtacante(atacante){
     if(atacante === player1){
-        return document.querySelectorAll(`#player .personaje img`)[0]
+        return document.querySelectorAll(`#player1 .personaje img`)[0]
     }else if (atacante === player2){
         return document.querySelectorAll(`#player2 .personaje img`)[0]
     }
@@ -58,7 +58,7 @@ function actualizarVista(valorAtaque, atacante, atacado){
         setTimeout(() => {
             // Activo los botones del contrincante
             desactivarBotones(atacado)
-            // Saco la clases "herido" del atacado
+            // Saco la class "herido" del atacado
             personajeAtacadoDOM.classList.toggle("herido")
             actualizarIndicador(`Turno de ${atacado.nombre}`)
             turnos += 1

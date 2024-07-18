@@ -29,7 +29,7 @@ let personajeQiyana = new Personajes(
         },
     },
     "resources/img/personajes/iconqiyana.png",
-    "resources/img/personajes/Qiyana_Render.png"
+    "resources/img/personajes/iconqiyana.png"
 );
 
 let personajeAkali = new Personajes(
@@ -37,13 +37,15 @@ let personajeAkali = new Personajes(
     150,
     20, {
         nombre: "Five Point Strike",
-        descripcion: "Akali lanza sus kunais al aire causando 20 a 40 de daño",
+        descripcion: "Akali lanza sus kunais al aire causando 20 o 40 de daño",
         usar: function (valorPoder) {
-            return valorPoder;
+            let valorMultiplicador = Math.floor(Math.random() * (3 - 1));
+            let valorAtaque = valorPoder * valorMultiplicador;
+            return valorAtaque;
         },
     }, {
         nombre: "Perfect Execution",
-        descripcion: " Akali se pepara y desplaza hacia el enemigo 3 veces, causandole entre 40, 60, y 80 de daño",
+        descripcion: " Akali se pepara y desplaza hacia el enemigo 4 veces, causandole entre 20, 40, 60, u 80 de daño",
         usar: function (valorPoder) {
             let valorMultiplicador = Math.floor(Math.random() * (5 - 1));
             let valorAtaque = valorPoder * valorMultiplicador;
@@ -51,7 +53,7 @@ let personajeAkali = new Personajes(
         },
     },
     "resources/img/personajes/iconakali.png",
-    "resources/img/personajes/Akali_Render.png"
+    "resources/img/personajes/iconakali.png"
 );
 
 let listadoPersonajes = [];

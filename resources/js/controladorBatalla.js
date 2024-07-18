@@ -3,14 +3,14 @@ function elegirQuienEmpieza(){
     if((Math.random() <= 0.5)){
         // Arranca Player1
         console.log("Player 1")
-        BotonesPlayer1.forEach((element) => {
+        BotonesPlayer1.forEach(function (element) {
             element.classList.toggle("desactivado")
         })
         indicador.innerText = `${player1.nombre} arranca! Elige un ataque!`
     }else{
         // Arranca Player2
         console.log("Player 2")
-        BotonesPlayer2.forEach((element) => {
+        BotonesPlayer2.forEach(function (element) {
             element.classList.toggle("desactivado")
         })
         indicador.innerText = `${player2.nombre} arranca! Elige un ataque!`
@@ -37,8 +37,8 @@ botonAtaque2Player1.addEventListener("click", () => {
     jugadorAtaca(player1, 2, player2)
 })
 botonAtaque1Player2.addEventListener("click", () => {
-    jugadorAtaca(player2, 1, player2)
+    jugadorAtaca(player2, 1, player1)
 })
 botonAtaque2Player2.addEventListener("click", () => {
-    jugadorAtaca(player2, 2, player2)
+    jugadorAtaca(player2, 2, player1)
 })

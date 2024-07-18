@@ -2,10 +2,10 @@ let turnos = 0
 
 // Cargo en un array los fondos de la arena
 let fondosBatalla = [
-    "resources\img\background\pantalla1.png",
-    "resources\img\background\pantalla2.png",
-    "resources\img\background\pantalla3.png",
-    "resources\img\background\pantalla4.png",
+    "resources/img/background/1.png",
+    "resources/img/background/2.png",
+    "resources/img/background/3.png",
+    "resources/img/background/4.png",
 ]
 
 // Cargo los botones para la pelea
@@ -75,12 +75,6 @@ function cargarBatalla(player1, player2){
 
 
     // Cargo los fondos con un Math random para que cada uno de los cuatro sea elegido al azar
-    const fondoElegido = Math.floor(Math.random() * 4);
+    const fondoElegido = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
     fondos[0].style.backgroundImage = `url('${fondosBatalla[fondoElegido]}')`;
-    //ASI ES EL ORIGINAL, PRUEBO CON EL NUMERO 4 DE UNA
-    //const fondoElegido = Math.floor(Math.random() * (3 - 0 + 1)) + 0
-
-
-
-
 }
